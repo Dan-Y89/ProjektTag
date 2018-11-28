@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-border-box;
+  box-sizing: border-box;
 }
 
 html{
@@ -42,7 +42,7 @@ html{
     font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px),(min-width: 50px;) {
     .topnav a, .topnav input[type=text] {
         float: none;
         display: block;
@@ -56,9 +56,192 @@ html{
     }
 }
 
-h1 {
+.theone{
   text-align: center;
-  margin-top: -17%;
+  /* margin-top: -17%;
   margin-right: auto;
   text-shadow: 0 0 50px white;
+  font-size: 14px; */
+  background: none;
+  border-radius: 10px;
+  width:76%;
+  height:220%;
+  color: white;
+  background:#333;
+  transition: transparent 70%;
+}
+
+.thetwo{
+  text-align: center;
+  /* margin-top: -17%;
+  margin-right: auto;
+  text-shadow: 0 0 50px white;
+  font-size: 14px; */
+  background: none;
+  border-radius: 10px;
+  width:75%;
+  height:50%;
+  color: white;
+}
+
+.theth{
+  text-align: center;
+  /* margin-top: -17%;
+  margin-right: auto;
+  text-shadow: 0 0 50px white;
+  font-size: 14px; */
+  background: none;
+  border-radius: 10px;
+  width:74%;
+  height:220%;
+  color: white;
+  background-color: black;
+  background:#333;
+  padding: 4px;
+}
+
+.thef{
+  text-align: center;
+  /* margin-top: -17%;
+  margin-right: auto;
+  text-shadow: 0 0 50px white;
+  font-size: 14px; */
+  background: none;
+  border-radius: 10px;
+  width:74%;
+  height:220%;
+  color: white;
+  background-color: black;
+  background:#333;
+}
+
+#wordp1{
+  text-align: center;
+  /* margin-top: -7%;
+  margin-right: auto; */
+  position: absolute;
+  top: 190px;
+  left: 280px;
+  text-shadow: 0 0 50px white;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 40px;
+}
+
+#wordp2{
+  text-align: center;
+  /* margin-top: -7%;
+  margin-right: auto; */
+  position: absolute;
+  top: 290px;
+  left: 330px;
+  text-shadow: 0 0 50px white;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 30px;
+}
+
+#wordp3{
+  text-align: center;
+  /* margin-top: -7%;
+  margin-right: auto; */
+  position: absolute;
+  top: 210px;
+  right: 420px;
+  text-shadow: 0 0 50px white;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 32px;
+}
+
+#wordp4{
+  text-align: center;
+  /* margin-top: -7%;
+  margin-right: auto; */
+  position: absolute;
+  top: 280px;
+  right: 390px;
+  text-shadow: 0 0 50px white;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 34px;
+}
+
+@media (min-width: 178em) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* #navigation{
+  display: none;
+  opacity: 0;
+} */
+
+#navigation.show{
+  display: block;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 98;
+  left: 0;
+  opacity: 1;
+}
+
+#social-nav li{
+  list-style: none;
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+#footer ul{
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2rem;
+  padding-bottom: 4px;
+}
+
+#footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer{
+  padding: 2rem;
+}
+
+#footer-nav li{
+  padding: .5rem;
+}
+
+#social-nav a:hover{
+  color: #828282;
+  transition: 2s;
+}
+
+@media (min-width: 48em){
+  /* .row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+  }
+  .card{
+    width: 48%;
+    margin: 1%;
+  } */
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer-nav ul{
+    display: flex;
+    margin-left: 3rem;
+  }
 }
